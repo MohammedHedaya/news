@@ -6,8 +6,7 @@ import 'package:provider/provider.dart';
 
 class NewsListWidget extends StatefulWidget {
   final Source source;
-
-  NewsListWidget(this.source, {Key? key}) : super(key: key);
+  NewsListWidget(this.source,{Key? key}) : super(key: key);
 
   @override
   State<NewsListWidget> createState() => _NewsListWidgetState();

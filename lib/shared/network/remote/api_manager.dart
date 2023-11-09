@@ -14,11 +14,12 @@ class ApiManager {
     return sourcesResponse;
   }
 
-  static Future<NewsResponse> getNews(String? sourceId) async{
+  static Future<NewsResponse> getNews(String? sourceId,{String? search}) async{
     var url = Uri.https(
         BASE_URL, "/v2/everything",{
           "apiKey": API_KEY,
-          "sources": sourceId
+          "sources": sourceId,
+      'q': search
         });
     var response =await http.get(url);
     var json = jsonDecode(response.body);
