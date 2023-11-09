@@ -17,10 +17,10 @@ class HomeDrawer extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             Container(
-              padding: EdgeInsets.symmetric(vertical: 50),
+              padding: const EdgeInsets.symmetric(vertical: 50),
               alignment: Alignment.center,
               color: Theme.of(context).primaryColor,
-              child: Text(
+              child: const Text(
                 "News App",
                 style: TextStyle(
                   color: Colors.white,
@@ -33,7 +33,7 @@ class HomeDrawer extends StatelessWidget {
               onTap: (){
                 onMenuItemClick(MenuItem.categories);
               },
-              child: Row(
+              child: const Row(
                 children: [
                   Icon(
                     Icons.list,
@@ -46,12 +46,12 @@ class HomeDrawer extends StatelessWidget {
                 ],
               ),
             ),
-            Gap(12),
+            const Gap(12),
             InkWell(
               onTap: (){
                 onMenuItemClick(MenuItem.settings);
               },
-              child: Row(
+              child: const Row(
                 children: [
                   Icon(
                     Icons.settings,

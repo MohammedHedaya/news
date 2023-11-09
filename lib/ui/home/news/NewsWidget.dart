@@ -34,7 +34,7 @@ class NewsWidget extends StatelessWidget {
                     Center(
                         child: CircularProgressIndicator(
                             value: downloadProgress.progress)),
-                errorWidget: (context, url, error) => Icon(Icons.error),
+                errorWidget: (context, url, error) => const Icon(Icons.error),
               ),
             ),
           ),
@@ -45,7 +45,7 @@ class NewsWidget extends StatelessWidget {
           Text(
             news.title ?? "",
             textAlign: TextAlign.start,
-            style: TextStyle(fontSize: 18, fontWeight: FontWeight.w400),
+            style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w400),
           ),
           Text(
             news.publishedAt ?? "",

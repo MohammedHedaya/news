@@ -13,11 +13,11 @@ class CategoriesFields extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(12),
+      padding: const EdgeInsets.all(12),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(
+          const Text(
             "Pick Your Category\n of interest",
             style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
           ),

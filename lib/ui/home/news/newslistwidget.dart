@@ -28,7 +28,7 @@ class _NewsListWidgetState extends State<NewsListWidget> {
       child: Consumer<NewsListViewModel>(
         builder: (context, viewModel, child) {
           if (viewModel.showLoading == true) {
-            return Center(child: CircularProgressIndicator());
+            return const Center(child: CircularProgressIndicator());
           } else if (viewModel.errorMessage != null) {
             return Center(
               child: Column(
@@ -37,7 +37,7 @@ class _NewsListWidgetState extends State<NewsListWidget> {
                   Text(viewModel.errorMessage ?? ""),
                   ElevatedButton(onPressed: () {
                     viewModel.getNews(widget.source.id??"");
-                  }, child: Text('Try Again'))
+                  }, child: const Text('Try Again'))
                 ],
               ),
             );

@@ -25,7 +25,7 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
         color: Colors.white,
         image: DecorationImage(
             image: AssetImage("assets/images/pattern.png"), fit: BoxFit.fill),
@@ -43,11 +43,11 @@ class _HomeScreenState extends State<HomeScreen> {
 
                       });
                     },
-                    icon: Icon(Icons.search_rounded),
+                    icon: const Icon(Icons.search_rounded),
                   ),
                 ],
                 backgroundColor: Colors.green,
-                shape: OutlineInputBorder(
+                shape: const OutlineInputBorder(
                   borderSide: BorderSide(color: Colors.transparent),
                   borderRadius: BorderRadius.only(
                     bottomLeft: Radius.circular(18),
@@ -66,27 +66,27 @@ class _HomeScreenState extends State<HomeScreen> {
                   },
                   decoration: InputDecoration(
                     contentPadding:
-                        EdgeInsets.symmetric(vertical: 5, horizontal: 10),
+                        const EdgeInsets.symmetric(vertical: 5, horizontal: 10),
                     prefixIconColor: Colors.green,
                     suffixIconColor: Colors.green,
                     focusColor: Colors.green,
                     fillColor: Colors.white,
                     filled: true,
-                    focusedBorder: OutlineInputBorder(
+                    focusedBorder: const OutlineInputBorder(
                       borderRadius: BorderRadius.all(
                         Radius.circular(30),
                       ),
                       borderSide:
                           BorderSide(color: Colors.transparent, width: 0),
                     ),
-                    enabledBorder: OutlineInputBorder(
+                    enabledBorder: const OutlineInputBorder(
                       borderRadius: BorderRadius.all(
                         Radius.circular(30),
                       ),
                       borderSide:
                           BorderSide(color: Colors.transparent, width: 0),
                     ),
-                    border: OutlineInputBorder(
+                    border: const OutlineInputBorder(
                       borderRadius: BorderRadius.all(
                         Radius.circular(30),
                       ),
@@ -98,12 +98,12 @@ class _HomeScreenState extends State<HomeScreen> {
                       searchController.clear();
                       search=!search;
                       setState(() {});
-                    }, icon: Icon(Icons.close),),
-                    suffixIcon: Icon(Icons.search),
+                    }, icon: const Icon(Icons.close),),
+                    suffixIcon: const Icon(Icons.search),
                   ),
                 ),
           backgroundColor: Colors.green,
-          shape: OutlineInputBorder(
+          shape: const OutlineInputBorder(
             borderSide: BorderSide(color: Colors.transparent),
             borderRadius: BorderRadius.only(
               bottomLeft: Radius.circular(20),
@@ -127,7 +127,7 @@ class _HomeScreenState extends State<HomeScreen> {
         }
       case MenuItem.settings:
         {
-          selectedWidget = SettingsFields();
+          selectedWidget = const SettingsFields();
         }
     }
     setState(() {});

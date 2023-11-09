@@ -6,7 +6,7 @@ import 'package:news/ui/home/news/newslistwidget.dart';
 class SourcesTabsWidgets extends StatefulWidget {
   List<Source> sources;
 
-  SourcesTabsWidgets(this.sources);
+  SourcesTabsWidgets(this.sources, {super.key});
 
   @override
   State<SourcesTabsWidgets> createState() => _TabControllerWidgetState();
